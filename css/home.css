@@ -1,0 +1,46 @@
+body {
+    margin: 0
+}
+
+.header__navBar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding:0 10%;
+    background-color: #070F34;
+}
+
+.header__navBar--links ul {
+    display: grid;
+    grid-template-columns: .8fr .8fr .8fr .8fr;
+    list-style: none;
+}
+
+.header__navBar--links ul a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+}
+
+.header__navBar--brand h2 {
+    display: inline;
+    padding: 5px;
+    color: white;
+    border: 1px solid #F87B0E;
+    background-color: #F87B0E;
+    border-radius: 10px;
+}
+.hero {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    background-color: #070F34;
+}
+.hero--text {
+    color: white;
+}
+.hero--image {
+    height: 200px;
+    background-color: white;
+}
