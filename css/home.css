@@ -1,6 +1,9 @@
-body {
-    margin: 0
+body,
+figure { 
+    margin: 0; 
 }
+
+
 
 .header__navBar {
     display: grid;
@@ -30,6 +33,7 @@ body {
     background-color: #F87B0E;
     border-radius: 10px;
 }
+
 .hero {
     display: grid;
     align-items: center;
@@ -37,10 +41,43 @@ body {
     padding: 0 10%;
     background-color: #070F34;
 }
-.hero--text {
-    color: white;
-}
+
+.hero--text { color: white; }
+
 .hero--image {
     height: 200px;
     background-color: white;
 }
+
+.projects {
+    padding:0 10%;
+}
+
+.projects__title { text-align: center; }
+
+.projects--carousel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.projects--carousel .item,
+.projects--carousel .item img {
+    width: 315px;
+    height: 170px;
+}
+
+.projects__prevCarousel,
+.projects__nextCarousel {
+    position: absolute;
+    top: 50%;
+    color: white;
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+.projects__prevCarousel { left: 0; }
+
+.projects__nextCarousel { right: 0; }
