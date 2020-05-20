@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,700;1,500&display=swap');
+
 body,
 figure { 
-    margin: 0; 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; 
 }
 
-
+h1,
+h2,
+h3 {
+    font-family: 'roboto', sans-serif;
+}
 
 .header__navBar {
     display: grid;
@@ -23,6 +30,7 @@ figure {
     text-decoration: none; 
     color: white;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .header__navBar--brand h2 {
@@ -38,22 +46,31 @@ figure {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    padding: 0 10%;
+    padding: 0 10% 10px;
     background-color: #070F34;
 }
 
-.hero--text { color: white; }
+.hero--text { 
+    text-align:center;
+    font-size: 28px;
+    color: white;
+
+}
 
 .hero--image {
-    height: 200px;
+    height: 190px;
     background-color: white;
 }
 .skills {
+    padding-top: 2em;
     margin: 0 10%;
     background-color: #f6f6f6;
 }
 
-.skills--title { 
+.skills__title { font-size: 22px; }
+
+.skills__title,
+.skills__description { 
     margin: 0;
     text-align: center;
 }
@@ -62,57 +79,76 @@ figure {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    margin-top: 1em;
 }
 
 .skills__learned--item { 
     display: flex;
+    justify-content: center;
+    width: 100%;
     margin: 10px 0;
+    text-align: center;
  }
+.skills__learned--item i {
+    font-size: 35px;
+    width: 40px;
+    margin-right: 10px;
+}
 
-.skills__learned--item-Container {
+.skills__learned--Container {
     position: relative;
-    width: 300px;
-    height: 20px;
+    width: 85%;
+    height: 35px;
     border-radius: 100px;
     border: 1px solid gray;
     overflow: hidden;
     background-color: white;
 }
 
-.skills__learned--item-PercenBar {
+.skills__learned--PercenBar {
     width: 80%;
     height: 100%;
     background-color: #2f7ae0;
 }
 
-.skills__learned--item-PercenNumber {
+.skills__learned--PercenNumber {
     position: absolute;
-    top: 0;
-    right: 50%;
+    top: 20%;
+    width: 100%;
     margin: 0;
+    font-weight: bold;
     color: white;
 }
 
 .projects {
-    padding:0 10%;
+    margin:0 10%;
+    padding: 2em 0 1em;
+    background-color: #f6f6f6;
 }
 
-.projects__title { text-align: center; }
+.projects__title { font-size: 22px; }
 
-.projects--carousel {
+.projects__title, .projects__description { 
+    text-align: center;
+    margin: 0;
+}
+
+.projects__carousel {
     position: relative;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-items: center;
+    margin-top: 1em;
 }
 
-.projects--carousel .item,
-.projects--carousel .item img {
-    width: 315px;
-    height: 170px;
+.projects__carousel--item {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
 }
+
+.projects__carousel--item img{ width: 90%; }
 
 .projects__prevCarousel,
 .projects__nextCarousel {
@@ -129,27 +165,27 @@ figure {
 
 .footer {
     display: flex;
-    padding:10px 10%;
+    padding: 0 10%;
     color: white;
     justify-content: space-between;
     background-color: #070F34;
 }
 
-.footer--social-media a{
+.footer__social-media a{
     text-decoration: none;
     margin: 0 15px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-.credits {
+.footer__credits {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     align-self: center;
 }
 
-.platzi,
-.platzi i {
+.footer__platzi,
+.footer__platzi i {
     color:#98CA3F;
 }
 
