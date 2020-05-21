@@ -210,3 +210,82 @@ h3 {
     color:#98CA3F;
 }
 
+/* ------------------- Pagina de contacto -------------*/
+
+.contact {
+    background-color: #070F34;
+    margin: 0 10%;
+    color: white;
+}
+
+.contact__title {
+    text-align: center;
+}
+
+.contact__sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contact__form {
+    width: 100%;
+    border-right: 1px solid white;
+    font-weight: bold;
+}
+
+.contact__form div {
+    margin: 0 15%
+}
+
+.contact__form input {
+    width: 100%;
+}
+
+.contact__form label {
+    display: block;
+}
+
+.social-networks {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.social-networks a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.social-networks i {
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    font-size: 24px;
+}
+
+.social-networks__gmail,
+.social-networks__wsp,
+.social-networks__msgr {
+    position: relative;
+    width: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #2f7ae0;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #2f7ae0;
+}
+
+.fa-envelope-square {
+    color:#d93025;
+}
+
+.fa-whatsapp {
+    color: #35d453;
+}
+
+.fa-facebook-messenger {
+    color: white
+}
