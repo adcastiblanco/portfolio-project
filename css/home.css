@@ -234,19 +234,21 @@ h3 {
 /* ------------------- Pagina de contacto -------------*/
 
 .contact {
-    height: 80%;
+    height: 60%;
     margin: 6% 10% 0;
     color: white;
 }
 
 .contact__title {
     margin: 0;
+    padding: 25px 0 0;
     text-align: center;
     background-color: #070F34;
 }
 
 .contact__sections {
     display: grid;
+    padding: 30px 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: #070F34;
