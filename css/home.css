@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,700;1,500&display=swap');
 
-body,
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body { 
+    margin: 0 0 55px;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.body-contact {
+    height: 100vh;
+    margin: 0;
+}
+
 figure { 
     margin: 0;
-    font-family: 'Open Sans', sans-serif; 
 }
 
 h1,
@@ -185,9 +199,11 @@ h3 {
 .projects__nextCarousel { right: 0; }
 
 .footer {
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
-    bottom: 0%;
     justify-content: space-between;
     width: 100%;
     color: white;
@@ -218,32 +234,50 @@ h3 {
 /* ------------------- Pagina de contacto -------------*/
 
 .contact {
-    background-color: #070F34;
-    margin: 0 10%;
+    height: 80%;
+    margin: 6% 10% 0;
     color: white;
 }
 
 .contact__title {
+    margin: 0;
     text-align: center;
+    background-color: #070F34;
 }
 
 .contact__sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    background-color: #070F34;
 }
 
 .contact__form {
-    width: 100%;
     border-right: 1px solid white;
     font-weight: bold;
 }
 
-.contact__form div { margin: 0 15% }
+.contact__form div { margin: 20px 15% }
 
-.contact__form input { width: 100%; }
+.contact__form input { 
+    width: 100%;
+    height: 20px;
+    border-radius: 8px;
+}
 
 .contact__form label { display: block; }
+
+.contact__form--button {
+    text-align: center;
+}
+
+.contact__form--send {
+    width: 50%;
+    height: 30px;
+    color: white;
+    border: 1px solid gray;
+    background-color: #f87b0e;
+}
 
 .social-networks {
     align-self: center;
