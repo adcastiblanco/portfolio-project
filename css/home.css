@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+
 
 html {
     min-height: 100%;
@@ -7,12 +8,10 @@ html {
 
 body { 
     margin: 0 0 55px;
-    height: 100vh;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'roboto', sans-serif;
 }
 
 .body-contact {
-    height: 100vh;
     margin: 0;
 }
 
@@ -20,10 +19,10 @@ figure {
     margin: 0;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'roboto', sans-serif;
+h1
+ {
+    font-family: 'anton', sans-serif;
+    font-weight: normal;
 }
 
 .body-index { background-color: #f6f6f6;}
@@ -234,8 +233,7 @@ h3 {
 /* ------------------- Pagina de contacto -------------*/
 
 .contact {
-    height: 60%;
-    margin: 6% 10% 0;
+    margin: 2% 10% 6%;
     color: white;
 }
 
@@ -275,9 +273,12 @@ h3 {
 
 .contact__form--send {
     width: 50%;
-    height: 30px;
+    height: 34px;
     color: white;
+    font-weight: bold;
+    font-size: 18px;
     border: 1px solid gray;
+    border-radius: 10px;
     background-color: #f87b0e;
 }
 
@@ -294,7 +295,7 @@ h3 {
 
 .social-networks i {
     position: absolute;
-    right: 20px;
+    right: 28px;
     top: 4px;
     font-size: 24px;
 }
@@ -303,13 +304,13 @@ h3 {
 .social-networks__wsp,
 .social-networks__msgr {
     position: relative;
-    width: 260px;
-    padding: 5px;
+    width: 280px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #2f7ae0;
     border-radius: 100px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     background-color: #2f7ae0;
 }
 
@@ -324,18 +325,55 @@ h3 {
 .body-allProjects { background-color: #070F34; }
 
 .allProjects__title {
-    width: 50%;
-    margin: 0 auto;
+    width: 65%;
+    margin: 27px 13%;
+    padding-bottom: 24px;
     color: white;
-    font-size: 30px;
-    
+    font-size: 32px;
+    border-bottom: 1px solid lightslategray;
 }
 
 .allProjects__item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: 15px 2%;
     border-radius: 15px;
     color: #7f7f7f;
     background-color: #f9f9f9;
+}
+
+.allProjects__item.left {
+    grid-template-columns: 1fr 1.5fr;
+    padding-right: 3%;
+}
+
+.allProjects__item.right {
+    grid-template-columns: 1.5fr 1fr;
+    padding-left: 3%;
+}
+
+.allprojects__item--image {
+    height: 87%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.allprojects__item--image img {
+    height: 100%;
+}
+
+.allProjects__item--more {
+    padding: 0.6% 5%;
+    color: white;
+    background-color: #f87b0e;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.left .allProjects__item--more {
+    margin-left: 80%;
+}
+
+.right .allProjects__item--more {
+    margin-right: 80%;
 }
