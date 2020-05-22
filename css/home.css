@@ -59,6 +59,11 @@ h1
     text-align: right;
 }
 
+.header__navBar--brand img {
+    width: 130px;
+}
+
+
 .hero {
     display: grid;
     align-items: center;
