@@ -14,6 +14,11 @@ body {
 .body-contact {
     margin: 0;
 }
+.body-allProjects,
+.body-blog { 
+    background-color: #070F34; 
+}
+
 
 figure { 
     margin: 0;
@@ -33,6 +38,7 @@ h1
     align-items: center;
     padding:0 10%;
     background-color: #070F34;
+    box-shadow: 1px 1px 5px black;
 }
 
 .header__navBar--links ul {
@@ -49,14 +55,8 @@ h1
     font-weight: bold;
 }
 
-.header__navBar--brand h2 {
-    display: inline;
-    padding: 5px;
-    border: 1px solid #F87B0E;
-    color: white;
-    font-size: 18px;
-    background-color: #F87B0E;
-    border-radius: 10px;
+.header__navBar--brand figure {
+    text-align: right;
 }
 
 .hero {
@@ -207,6 +207,7 @@ h1
     width: 100%;
     color: white;
     background-color: #070F34;
+    box-shadow: 1px 0px 5px black;
 }
 
 .footer__social-media { padding-left: 10%; }
@@ -241,6 +242,8 @@ h1
     margin: 0;
     padding: 25px 0 0;
     text-align: center;
+    font-size: 30px;
+    font-weight: 400;
     background-color: #070F34;
 }
 
@@ -306,7 +309,7 @@ h1
     position: relative;
     width: 280px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     border: 1px solid #2f7ae0;
     border-radius: 100px;
     text-align: center;
@@ -321,9 +324,6 @@ h1
 .fa-facebook-messenger { color: white }
 
 /* ------------------- Pagina de proyectos ----------------- */
-
-.body-allProjects { background-color: #070F34; }
-
 .allProjects__title {
     width: 65%;
     margin: 27px 13%;
@@ -376,4 +376,39 @@ h1
 
 .right .allProjects__item--more {
     margin-right: 80%;
+}
+
+/* --------------------- Pagina de blog ------------------- */
+
+.containerBlogs {
+    display: flex;
+}
+
+.blogItem {
+    background-color: #f9f9f9;
+    margin: 2%;
+    border-radius: 15px;
+}
+
+.blogItem__image {
+    width: 80%;
+    margin: 15px auto 0;
+}
+
+.blogItem__container {
+    margin: 0 20px 20px;
+}
+
+.blogItem__title {
+    margin-bottom: 0;
+}
+
+.blogItem__more {
+    padding: 1% 5%;
+    margin-left: 75%;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    background-color: #f87b0e;
+    font-weight: bold;
 }
